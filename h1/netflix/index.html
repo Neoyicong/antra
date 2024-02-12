@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <style>
+        hr {
+            margin: 0;
+            padding: 0;
+            border: none; /* Remove default border */
+        }
+
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            height: 50vh; /* Set the height of the header to 50% of the viewport height */
+            background-image: url('netflix_main.jpeg'); /* Specify the path to your large photo */
+            background-size: cover; /* Cover the entire background area */
+            background-position: center; /* Center the background image */
+            background-repeat: no-repeat; /* Prevent the background image from repeating */
+        }
+        .small-picture {
+            position: absolute; /* Set absolute positioning for the small picture */
+            top: 20px; /* Adjust the top position as needed */
+            left: 20px; /* Adjust the left position as needed */
+            width: 100px; /* Set the width of the small picture */
+            height: auto; /* Maintain aspect ratio */
+        }
+        .section {
+            border-top: 2px solid red;
+            padding: 30px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: left;
+            margin-bottom: 20px; /* Added margin between sections */
+        }
+        .section img {
+            max-width: 100%; /* Ensure the image fits within its container */
+            height: auto; /* Auto height to maintain aspect ratio */
+            margin-left: 20px; /* Adjusted margin to separate text and image */
+        }
+        .text-right {
+            order: 2;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with large photo -->
+    <div class="header">
+        <img src="netflix_icon_logo.png" alt="Small Picture" class="small-picture">
+    </div>
+
+    <!-- Section 1 -->
+    <div class="section">
+        <div style="margin-right: 200px;">
+            <h2>Enjoy on your TV</h2>
+            <p>Watch on Smart TVs, Playstation, Xbox, </p>
+            <p>Chromecast, Apple TV, Blu-ray players, and more.</p>
+        </div>
+        <video width="400" height="300" controls autoplay>
+        <source src="video_tv.m4v" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    </div>
+    <hr>
+
+<!-- Section 2 -->
+<div class="section" style="position: relative;">
+    <video width="400" height="300" controls autoplay style="position: absolute; top: 35%; left: 37%; transform: translate(-50%, -50%);">
+        <source src="video-devices.m4v" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <img src="device-pile.png" alt="Background Picture" style="width: 46%; height: auto; position: relative;">
+    <!-- Adjust width, height, and image source as needed -->
+    <div style="position: relative; margin-left: 50px; z-index: 1;">
+        <!-- Adjust margin-left as needed -->
+        <h2>Watch everywhere</h2>
+        <p>Stream unlimited movies and TV shows on your </p>
+        <p>phone, tablet, laptop, and TV.</p>
+    </div>
+</div>
+<hr>
+
+
+
+<!-- Section 3 -->
+<div class="section">
+    <div style="margin-right: 150px;">
+        <h2>Create profiles for kids</h2>
+        <p>Send kids on adventures with their favorite </p>
+        <p>characters in a space made just for them—</p>
+        <p></p>free with your membership.</p>
+    </div>
+    <img src="WechatIMG136.png" alt="Image 3" style="width: 500px; height: auto;">
+</div>
+<hr>
+
+<!-- Section 4 -->
+<div class="section" style="position: relative;">
+    <img src="mobile-0819.jpeg" alt="Image 4" style="width: 40%; height: auto;">
+    <img src="tv.png" alt="Another Picture" style="position: absolute; top: 170px; left: 225px; width: 350px; height: auto;">
+    <img src="download-icon.gif" alt="Your GIF" style="position: absolute; top: 170px; left: 480px; width: 50px; height: auto;">
+    <div class="text-right" style="position: relative; z-index: 1;">
+        <h2>Download your shows </h2>
+        <h2>to watch offline</h2>
+        <p>Text for Section 4 goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    </div>
+</div>
+<hr>
+
+</body>
+</html>
