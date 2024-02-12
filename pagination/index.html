@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pagination</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="pagination-container">
+    <div class="items-per-page">
+      <span>Items per page:</span>
+      <select id="itemsPerPage">
+        <!-- Options will be dynamically generated using JavaScript -->
+      </select>
+    </div>
+    <div id="currentRange" class="current-range"></div>
+
+    <div id="pagination" class="pagination"></div>
+  </div>
+  <div id="allPagesContainer"></div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
